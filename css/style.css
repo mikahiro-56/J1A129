@@ -3,7 +3,8 @@ body {
   font-size: 14px;
   line-height: 1.8;
   letter-spacing: .8px;
-  color: #333;
+  color: rgb(0, 0, 0);
+  background-color: #85858536;
 }
 
 a {
@@ -44,7 +45,7 @@ li {
 }
 
 .section:nth-of-type(odd) {
-  background-color: #f7f7f7;
+  background-color: #85858536;
 }
 
 .inner {
@@ -66,6 +67,7 @@ li {
   color: #333;
 }
 
+
 .lead {
   margin-bottom: 30px;
 }
@@ -78,8 +80,8 @@ li {
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: #fff;
-  box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+  background: linear-gradient(-225deg, #fcfdb5 0%, #f37c8c 100%);
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
 .header .inner {
@@ -98,7 +100,8 @@ li {
 }
 
 .header-logo a {
-  color: #333;
+  font-family: 'Yuji Syuku', serif;
+  color: rgb(17, 0, 255);
 }
 
 .header-nav-list {
@@ -118,7 +121,7 @@ li {
   padding: 5px 0;
   transition: .3s;
   letter-spacing: .05em;
-  color: #333;
+  color: rgb(17, 0, 255);
 }
 .header-nav-item a:after {
   position: absolute;
@@ -130,7 +133,7 @@ li {
   transition: .3s;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: rgb(255, 0, 0);
 }
 
 .header-nav-item a:hover:after {
@@ -144,8 +147,9 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 85vh;
+  height: 100vh;
   text-align: center;
+  background: radial-gradient(rgb(255, 255, 255), rgb(78, 77, 77));
 }
 
 .main-visual-inner {
@@ -158,9 +162,10 @@ li {
   line-height: 1.2;
   margin-bottom: 5px;
   letter-spacing: .1em;
+  font-family: 'Yuji Syuku', serif;
 }
 .main-visual-subtitle {
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 40px;
@@ -173,15 +178,16 @@ li {
   margin: 0 auto;
 }
 .main-visual-img {
-  width: 20%;
+  width: 30%;
   margin-right: 30px;
   border-radius: 50%;
 }
 .main-visual-img img {
-  border-radius: 50%;
+  border-radius: 500%;
 }
 .main-visual-text {
   flex: 1;
+  font-size: 20px;
 }
 .main-visual-text p:not(:last-child) {
   margin-bottom: 30px;
@@ -211,14 +217,14 @@ li {
   display: inline-block;
   max-width: 180px;
   text-align: center;
-  background-color: #293b6a;
+  background-color: #13ce13;
   font-size: 16px;
-  color: #FFF;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
-  border: 1px dashed #FFF;
-  box-shadow: 0px 0px 0px 2px #293b6a;/* box-shadowで外枠を */
+  border: 1px dashed rgb(0, 0, 0);
+  box-shadow: 0px 0px 0px 2px #0048ff;/* box-shadowで外枠を */
 }
 
 .btn-denim:hover {
@@ -230,13 +236,13 @@ li {
   max-width: 180px;
   height:50px;
   text-align: center;
-  background-color: #9ec34b;
+  background-color: #b428b4;
   font-size: 16px;
   line-height: 52px;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
-  border: 2px solid #9ec34b;
+  border: 2px solid #ff0000;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -255,7 +261,7 @@ li {
   z-index: -1;
 }
 .btn-open:hover{
-  color: #9ec34b;
+  color: #ff0000;
 }
 .btn-open:hover:after{
   height: 240%;
@@ -271,18 +277,18 @@ li {
   max-width: 180px;
   text-align: center;
   font-size: 16px;
-  color: #9ec34b;
+  color: #5640d1;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
   position: relative;
-  border: 2px solid #9ec34b;
+  border: 2px solid #ff0000;
   transition: .4s;
 }
 
 .btn-box:hover {
-  border: 2px solid transparent;
-  color: #000;
+  border: 2px solid #13ce13;
+  color: rgb(72, 52, 255);
 }
 
 .btn-box:before, .btn-box:after {
@@ -320,12 +326,12 @@ li {
   max-width: 180px;
   text-align: center;
   font-size: 16px;
-  color: #FFF;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: bold;
   padding: 12px 24px;
   border-radius: 4px;
-  background-image: linear-gradient(-90deg, #89eb75, #f1e753);
+  background-image: linear-gradient(-90deg, #000, #ff0000);
   transition: .5s;
   background-size: 200%;
 }
@@ -337,11 +343,20 @@ li {
 /*--------------------------------
  Skill
 ---------------------------------*/
+div.inner {
+  color: #0004ff;
+}
+h2.title {
+  font-family: 'Yuji Syuku', serif;
+  color: #f00;
+}
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: -50px;
+  justify-content: space-around;
+
+  margin: auto auto;
+  background: linear-gradient(-225deg, #afb15c 0%, #e7b7dd 60%, #ec4158 100%)
 }
 
 .skill-item {
@@ -363,7 +378,12 @@ li {
 }
 
 .skill-name {
+  font-family: 'Yuji Syuku', serif;
   margin-bottom: 3px;
+  color: #00f836;
+}
+p.skill-text {
+  color: #0004ff;
 }
 
 /*--------------------------------
@@ -417,7 +437,7 @@ li {
 
 .page-top .material-icons-outlined {
   vertical-align: bottom;
-  color: #fff;
+  color: rgb(255, 0, 0);
 }
 
 /*--------------------------------
@@ -425,13 +445,13 @@ li {
 ---------------------------------*/
 .footer {
   padding: 30px;
-  background-color: #333;
+  background-color: rgba(255, 255, 255, 0.377);
 }
 
 .copyright {
   font-size: 10px;
   text-align: center;
-  color: #797979;
+  color: #000000;
 }
 
 /*--------------------------------
@@ -548,7 +568,7 @@ li {
     font-size: 30px;
   }
   .main-visual-subtitle {
-    font-size: 16px;
+    font-size: 30px;
     margin-bottom: 20px;
   }
 
@@ -618,4 +638,8 @@ li {
   .article {
     padding: 50px 0;
   }
+}
+.po {
+  max-width: 30%;
+  text-align: center;
 }
