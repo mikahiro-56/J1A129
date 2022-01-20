@@ -93,7 +93,7 @@ address {
   /* カーソルの形状を指定 */
 }
 /* メニューが開いたときの、ハンバーガーボタンの画像を指定 */
-.nav-toggle:checked~.btn-burger {
+.nav-toggle:checked ~ .btn-burger {
   background: url("../img/close.svg") center center / 26px 26px no-repeat;
 }
 /* ナビゲーション */
@@ -117,7 +117,7 @@ address {
   color: #fff;
 }
 /* メニューが開いたとき、<ul>を表示する */
-.nav-toggle:checked~.nav .nav-list {
+.nav-toggle:checked ~ .nav .nav-list {
   display: block;
 }
 /* ----------ナビゲーションのスタイル指定 ここまで---------- */
@@ -215,32 +215,32 @@ address {
 /* 入場料（テーブル） */
 /* テーブル全体への指定 */
 .price-table {
-  
-  
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
   /* テーブルの境界線が重ねて表示する */
-  
 }
 /* <thead>に対する指定 */
-
-  
-  
-
+.price-table thead {
+  color: #fff;
+  background-color: #4184e2;
+} 
 /* <th>と<td>に対する指定 */
-
-  
-  
-  
-
+.price-table th,
+.price-table td {
+  padding: 20px 15px;
+  font-weight: 500;
+  border: 1px solid #707070;
+}
 /* <tbody>内の<th>に対する指定 */
-
-  
-  
-
+.price-table tbody th {
+  text-align: left;
+  background-color: #fff;
+}
 /* <tbody>内の<td>に対する指定 */
-
-  
-
-
+.price-table tbody td {
+  background-color: #fff;
+}
 /* --------------------------------------------------
   お問い合わせフォーム
 -------------------------------------------------- */
