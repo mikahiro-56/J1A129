@@ -200,6 +200,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -40px;
+  text-align: center;
 }
 
 .works-item {
